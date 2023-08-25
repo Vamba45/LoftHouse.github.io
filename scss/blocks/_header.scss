@@ -1,15 +1,11 @@
 .header {
     min-height: 840px;
-    background: linear-gradient(180deg,
-     #242B33 11.98%,
-      rgba(45, 52, 60, 0.38) 51.04%,
-       #242B33 92.19%), 
-    url('../../img/header/header-bg.jpeg'),
-     lightgray 50% / cover no-repeat;
+    background: linear-gradient(180deg, $dark 11.98%,rgba(45, 52, 60, 0.38) 51.04%, $dark 92.19%), url('../../img/header/header-bg.jpeg'),
+    lightgray 50% / cover no-repeat;
 
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     padding-top: 30px;
     padding-bottom: 74px;
@@ -29,11 +25,6 @@
     // .header__nav
 
     &__nav {
-    }
-
-    // .header__title
-
-    &__title {
     }
 
     // .header__footer
