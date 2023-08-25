@@ -11,15 +11,19 @@
      flex-direction: column;
      justify-content: space-between;
 
+    padding-top: 30px;
+    padding-bottom: 74px;
+
     &__top {
     }
 
-    // .header__top-row
+    // .header__top-row     
 
     &__top-row {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 
     // .header__nav
