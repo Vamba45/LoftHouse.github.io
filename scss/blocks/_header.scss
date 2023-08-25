@@ -1,3 +1,5 @@
+@import '../base/vars';
+
 .header {
     min-height: 840px;
     background: linear-gradient(180deg, $dark 11.98%,rgba(45, 52, 60, 0.38) 51.04%, $dark 92.19%), url('../../img/header/header-bg.jpeg'),
@@ -20,6 +22,29 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    // .header__title
+
+    &__title {
+        color: $accent;
+        text-align: center;
+        font-family: $font-accent;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        padding-bottom: 141px;
+
+        position: relative;
+    }
+    
+    &__title-icon {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        //transform: translate(-50%, 0%);
     }
 
     // .header__nav
