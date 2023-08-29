@@ -19,9 +19,14 @@ body {
     width: 1140px;
 }
 
+.containersmall {
+    width: 840px;
+    max-width: 840px;
+}
+
 a {
     color: #fff;
-    font-family: Raleway;
+    font-family: $font-main;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
