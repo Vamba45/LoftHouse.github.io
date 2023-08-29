@@ -1,0 +1,23 @@
+.benefits {
+}
+.visually-hidden {
+}
+.container {
+}
+.benefits__row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 70px;
+}
+.benefits__item {
+    text-align: center;
+}
+.benefits__item-img {
+    margin-bottom: 53px;
+}
+.benefits__item-text {
+    font-size: 20px;
+    line-height: 1.35;
+    font-family: $font-secondary;
+    font-weight: 300;
+}
