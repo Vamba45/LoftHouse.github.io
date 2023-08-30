@@ -1,6 +1,7 @@
 @import '../base/vars';
 
 .card {
+    overflow: hidden;
     position: relative;
     display: inline-block;
 
@@ -40,8 +41,23 @@
         opacity: 1;
     }
 }
+
 .card__img {
+    position: relative;
+    transition: transform 0.2s ease-in;
 }
+
+.card {
+    &:hover {
+        .card__img {
+            transform: scale(1.1);
+            filter: contrast(110%) 
+                    brightness(1.2)
+                    saturate(1.2);
+        }
+    }
+}
+
 .card__title {
     position: absolute;
     left: 50px;
