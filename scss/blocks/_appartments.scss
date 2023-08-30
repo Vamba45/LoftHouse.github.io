@@ -11,4 +11,7 @@
     font-weight: 700;
 }
 .appartments__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(290px, 1fr));
+    gap: 30px;
 }
