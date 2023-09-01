@@ -18,6 +18,11 @@
 }
 
 .cta__text {
+    line-height: 1.5;
+
+    p + p {
+        margin-top: 1em;
+    }
 }
 
 .cta__form {
