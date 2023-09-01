@@ -1,15 +1,25 @@
 .cta {
-    padding: 180px;
+    padding: 180px 0;
+
+    background: no-repeat url("../../img/cta/cta-bg.jpg");
 }
-.container {
-}
+
 .cta__title {
+    margin-bottom: 17px;
 }
+
 .title-2 {
 }
+
 .cta__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
+
 .cta__text {
 }
+
 .cta__form {
 }
+
