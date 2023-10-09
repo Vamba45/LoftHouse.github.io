@@ -20,10 +20,10 @@
     }
 
     &--map::before {
-        background-image: url('../../img/header/phone-call.svg');
+        background-image: url('../../img/header/placeholder.svg');
     }
 
     &--tel::before {
-        background-image: url('../../img/header/placeholder.svg');
+        background-image: url('../../img/header/phone-call.svg');
     }
 }
