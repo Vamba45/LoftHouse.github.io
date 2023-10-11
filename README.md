@@ -9,4 +9,3 @@
     <li>Video player</li>
     <li>Mobile adaptive</li>
 </ul>
-
