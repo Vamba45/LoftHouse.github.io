@@ -11,6 +11,11 @@
 	box-sizing: border-box;
 }
 
+html { 
+	position: absolute;
+	min-width: 100%;
+}
+
 /* Links */
 
 a, a:link, a:visited  {
