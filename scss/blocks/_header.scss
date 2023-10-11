@@ -50,6 +50,9 @@
     // .header__nav
 
     &__nav {
+        @media screen and (max-width: 999px) {
+            display: none;
+        }
     }
 
     // .header__footer
