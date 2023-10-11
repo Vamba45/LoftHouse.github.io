@@ -6,13 +6,18 @@
     background: linear-gradient(180deg, $dark 11.98%,rgba(45, 52, 60, 0.38) 51.04%, $dark 92.19%), url('../../img/header/header-bg.jpeg'),
     lightgray 50% / cover no-repeat;
 
+    @include mediaTablet {
+        min-height: unset;
+        row-gap: 50px;
+    }
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     padding-top: 30px;
     padding-bottom: 74px;
-
+ 
     &__top {
     }
 
@@ -39,6 +44,11 @@
         padding-bottom: 141px;
 
         position: relative;
+
+        @include mediaTablet{ 
+            font-size: 32px;
+            padding-bottom: 100px;
+        }
     }
     
     &__title-icon {
@@ -66,6 +76,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
+
+        @include mediaTablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+        }
     }
 }
 
