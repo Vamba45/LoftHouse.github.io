@@ -61,3 +61,10 @@
     }
 }
 
+.header__nav-btn {
+    display: none;
+
+    @media screen and (max-width: 999px) {
+        display: block;
+    }
+}
