@@ -50,7 +50,7 @@
     // .header__nav
 
     &__nav {
-        @media screen and (max-width: 999px) {
+        @media screen and (max-width: $tablet) {
             display: none;
         }
     }
@@ -67,7 +67,7 @@
 .header__nav-btn {
     display: none;
 
-    @media screen and (max-width: 999px) {
+    @media screen and (max-width: $tablet) {
         display: block;
     }
 }
