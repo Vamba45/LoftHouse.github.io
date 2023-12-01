@@ -67,7 +67,8 @@
         // }
 
         @include mediaTablet {
-            display: none;
+            position: absolute;
+            transform: translateY(-800px);
         }
     }
 
