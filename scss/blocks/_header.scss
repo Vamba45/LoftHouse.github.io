@@ -109,5 +109,9 @@
 }
 
 .header__top-row.scrolling {
-    background: rgba(36, 43, 51, 0.75);
+    @include mediaTablet {
+        background: linear-gradient(to bottom, rgba(15, 31, 48, 0.85),
+        rgba(212, 193, 127, 0.85) 225%);
+        box-shadow: 5px 0px 15px rgba(155, 155, 155, 0.85);
+    }
 }
