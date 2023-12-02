@@ -8,6 +8,16 @@ window.addEventListener('resize', function() {
     }
 })
 
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header__top-row')
+
+    if(scrollY > 50) {
+        header.classList.add('scrolling')
+    } else if(scrollY < 50 && header.classList.contains('scrolling')) {
+        header.classList.remove('scrolling')
+    }
+})
+
 function getParents(elem) {
     var parents = [];
     while(elem.parentNode && elem.parentNode.nodeName.toLowerCase() != 'body') {
