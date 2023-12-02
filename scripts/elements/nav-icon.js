@@ -1,8 +1,10 @@
-const navIcon = document.getElementById('icon')
-const nav = document.getElementById('nav')
+const NAV_ICON = document.getElementById('icon')
+const NAV = document.getElementById('nav')
 
-navIcon.addEventListener('click', function(e) {
-    this.classList.toggle('active')
-    nav.classList.toggle('active')
-    document.body.classList.toggle('active')
+function toggleClass(elements, className) {
+elements.forEach(el => el.classList.toggle(className))
+};
+
+NAV_ICON.addEventListener('click', function(e) {
+    toggleClass([this, NAV, document.body], 'active')
 })
