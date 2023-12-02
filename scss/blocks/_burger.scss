@@ -1,0 +1,49 @@
+@import './../base/vars';
+
+.burger-menu {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $dark;
+
+    z-index: 10;
+
+    transform: translateY(-1000px);
+    transition: transform 0.2s ease;
+}
+
+.burger-menu.active {
+    transform: translateY(0);
+}
+
+.burger-menu__list {
+    padding: 130px 0;
+
+    overflow-y: auto;
+
+    width: inherit;
+    height: inherit;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+
+    li {
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+.burger-menu__list a {
+    font-size: 24px;
+    display: block;
+    width: 100%;
+
+    text-align: center;
+}

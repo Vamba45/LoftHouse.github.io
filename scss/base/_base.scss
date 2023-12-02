@@ -11,6 +11,12 @@ body {
     font-family: 'Raleway', sans-serif;
     background: $dark;
     color: #fff;
+
+    overflow-y: auto;
+}
+
+body.active {
+    overflow-y: hidden;
 }
 
 .container {
