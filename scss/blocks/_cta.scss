@@ -1,7 +1,16 @@
+@import './../base/mixins';
+@import './../base/vars';
+
 .cta {
     padding: 180px 0;
 
     background: no-repeat url("../../img/cta/cta-bg.jpg");
+
+    @include mediaTablet {
+        font-size: 14px;
+
+        padding: 70px 0 100px 0;
+    }
 }
 
 .cta__title {
@@ -15,6 +24,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
 }
 
 .cta__text {

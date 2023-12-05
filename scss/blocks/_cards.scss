@@ -75,4 +75,12 @@
         left: 30px;
         bottom: 28px;
     }
+
+    @media screen and (max-width: 850px) {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 599.5px) {
+        font-size: 22px;
+    }
 }
