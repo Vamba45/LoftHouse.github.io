@@ -3,15 +3,30 @@
 }
 .appartments__title {
     margin-bottom: 88px;
+
+    @include mediaTablet {
+        margin-bottom: 44px;
+    }
 }
 .title-2 {
     font-size: 36px;
     font-family: $font-accent;
     color: $accent;
     font-weight: 700;
+
+    @include mediaTablet {
+        font-size: 34px;
+        text-align: center;
+    }
 }
 .appartments__cards {
     display: grid;
-    grid-template-columns: repeat(2, minmax(290px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+
+    @include mediaTablet {
+        margin: 0 20px 44px 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
     gap: 30px;
 }
