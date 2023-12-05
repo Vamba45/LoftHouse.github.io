@@ -1,15 +1,38 @@
 .video {
+    text-align: center;
+    margin: 0 15px;
 }
 .video__link {
     position: relative;
-    display: block;
+    display: inline-block;
     text-align: center;
+
+    &:hover {
+        background-image: radial-gradient(transparent, rgba(171, 171, 171, 0.25));
+    }
 }
 .video__icon {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    &:hover {
+        width: 110px;
+        height: 110px;
+    }
+
+    @media screen and (max-width: 450px) {
+        width: 70px;
+        height: 70px;
+
+        &:hover {
+            width: 80px;
+            height: 80px;
+        }
+    }
 }
 .video__img {
+    position: relative;
+    z-index: -1;
 }
