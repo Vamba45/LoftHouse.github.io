@@ -1,3 +1,4 @@
+@import '../base/mixins';
 @import '../base/vars';
 
 
@@ -11,8 +12,13 @@
 
 .footer__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 0.75fr 0.70fr 1fr 1fr;
     gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 0 0.65fr 0.75fr 1fr;
+        justify-items: center;
+    }
 }
 
 .footer__logo {
