@@ -2,7 +2,7 @@
     padding: 120px 0;
 
     @include mediaTablet {
-        padding: 50px 0 90px 0;
+        padding: 50px 0;
     }
 }
 
@@ -16,11 +16,15 @@
 
     @include mediaTablet {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
         gap: 40px 0;
+        max-width: 490px;
 
-        max-width: 500px;
         margin: 0 auto;
+    }
+
+    @media screen and (max-width: 525px) {
+        grid-template-columns: 1fr;
     }
 }
 .benefits__item {
