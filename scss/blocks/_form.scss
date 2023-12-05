@@ -4,6 +4,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px 30px;
+
+    @media screen and (max-width: 630px) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 .form__input {
@@ -19,8 +24,13 @@
         color: $placeholder;
     }
 
-    &:focus {
+    &:hover {
         background-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    &:focus {
+        background-color: rgba(255, 255, 255, 0.2);
+        background-image: radial-gradient(transparent 20%, $accent);
     }
 }
 
@@ -29,19 +39,29 @@
     color: $muted;
     text-align: center;
     line-height: 1.23;
+    
+    @media screen and (max-width: 630px) {
+        order: 1;
+    }
 }
 
 .form__btn {
     padding: 12px 54px;
     background-color: $accent;
-    font-weight: 700;
     text-align: center;
     height: 50px;
+    font-weight: bold;
 
     white-space: nowrap;
-    transition: background-color 0.2s ease-in;
 
     &:hover {
-        background-color: saturate($accent, 20%);
+        background-color: #fff;
+        color: $accent;
+    }
+
+    @media screen and (max-width: 630px) {
+        max-width: 250px;
+        border-radius: 25px;
+        justify-self: center;
     }
 }
