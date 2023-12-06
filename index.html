@@ -182,7 +182,7 @@
         <section class="video" id="video">
             <h2 class="visually-hidden">Видео про ЖК Loft House</h2>
             <div class="container">
-                <a href="" class="video__link">
+                <a href="https://www.youtube.com/watch?v=QDLLgV2fgx4" class="video__link" data-youtubeLightbox>
                     <img src="./img/video/play-button.svg" class="video__icon" alt="play button">
                     <img src="./img/video/video-image.jpg" class="video__img" alt="video">
                 </a>
@@ -271,7 +271,20 @@
             </div>
         </footer>
     </main>
+
+     <!-- YouTube LightBox -->
+     <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
     <script src="https://kit.fontawesome.com/5673698aeb.js" crossorigin="anonymous"></script>
+    <script src="./plugins/youtubeLightbox/youtubeLightbox.js"></script>
     <script src="./scripts/elements/nav-icon.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
