@@ -107,5 +107,14 @@ function init() {
     myMap.geoObjects.add(new ymaps.Placemark([55.74318084414523, 37.61775855952447]), {}, {
         preset: 'islands#redIcon',
         iconColor: '#ff0000'
-    })
+    }); 
+
+    myMap.controls.remove('zoomControl');
+    myMap.controls.remove('geolocationControl');
+    myMap.controls.remove('searchControl');
+    myMap.controls.remove('trafficControl');
+    myMap.controls.remove('typeSelector');
+    myMap.controls.remove('fullscreenControl');
+
+    myMap.controls.add('routeButtonControl');
 }
