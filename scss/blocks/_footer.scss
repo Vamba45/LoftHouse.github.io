@@ -24,6 +24,7 @@
 
     @include mediaTablet {
         padding-top: 50px;
+        padding-bottom: 51px;
     }
 }
 
@@ -70,8 +71,16 @@
 }
 
 .footer__socials {
+    @include mediaTablet {
+        margin-top: 35px;
+    }
+
     margin-top: 20px;
     display: flex;
     column-gap: 22px;
     align-items: center;
+
+    a {
+        font-size: 26px;
+    }
 }
