@@ -20,13 +20,11 @@
 }
 .title-2 {
 }
-.section-map__map {
-}
 .map {
     background-color: #626262;
-    height: 358px;
-    
-    @include mediaTablet {
-        height: 300px;
+    height: 500px;
+
+    @media screen and (max-width: 650px) {
+        height: 310px;
     }
 }
