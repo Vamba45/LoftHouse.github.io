@@ -153,7 +153,7 @@ legend {
 
 .header {
   min-height: 840px;
-  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../../img/header/header-bg.jpeg"), lightgray 50%/cover no-repeat;
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/header/header-bg.jpeg"), lightgray 50%/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -270,10 +270,10 @@ legend {
   background-repeat: no-repeat;
 }
 .info--map::before {
-  background-image: url("../../img/header/placeholder.svg");
+  background-image: url("../img/header/placeholder.svg");
 }
 .info--tel::before {
-  background-image: url("../../img/header/phone-call.svg");
+  background-image: url("../img/header/phone-call.svg");
 }
 
 .benefits {
@@ -455,7 +455,7 @@ legend {
 
 .cta {
   padding: 180px 0;
-  background: no-repeat url("../../img/cta/cta-bg.jpg");
+  background: no-repeat url("../img/cta/cta-bg.jpg");
 }
 @media screen and (max-width: 959px) {
   .cta {
