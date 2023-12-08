@@ -1,8 +1,4 @@
-<h1>Hello, that's my first layout!</h1>
-
-<hr>
-
-<p>You can visit it on <a href="https://vamba45.github.io/LoftHouse.github.io/">link</a> </p>
+<h1><a href="https://vamba45.github.io/LoftHouse.github.io/">Hello, that's my first  layout!</a></h1>
 
 <hr>
 
