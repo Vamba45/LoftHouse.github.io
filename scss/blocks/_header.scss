@@ -3,7 +3,7 @@
 
 .header {
     min-height: 840px;
-    background: linear-gradient(180deg, $dark 11.98%,rgba(45, 52, 60, 0.38) 51.04%, $dark 92.19%), url('../../img/header/header-bg.jpeg'),
+    background: linear-gradient(180deg, $dark 11.98%,rgba(45, 52, 60, 0.38) 51.04%, $dark 92.19%), url('../img/header/header-bg.jpeg'),
     lightgray 50% / cover no-repeat;
 
     @include mediaTablet {
