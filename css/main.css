@@ -773,6 +773,30 @@ legend {
   font-size: 26px;
 }
 
+#up {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  background: #D4C17F url(../img//arrow-top-black.svg) center no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+}
+#up.scrolling {
+  opacity: 0.45;
+}
+#up.scrolling:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 959px) {
+  #up {
+    display: none;
+  }
+}
+
 .nav-btn__icon {
   z-index: 20;
   width: 45px;

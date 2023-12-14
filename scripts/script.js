@@ -10,11 +10,20 @@ window.addEventListener('resize', function() {
 
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.header__top-row')
+    const upBtn = document.querySelector('#up')
 
     if(scrollY > 50) {
         header.classList.add('scrolling')
-    } else if(scrollY < 50 && header.classList.contains('scrolling')) {
-        header.classList.remove('scrolling')
+        upBtn.classList.add('scrolling')
+    } else if(scrollY < 50) {
+
+        if(header.classList.contains('scrolling')) {
+            header.classList.remove('scrolling')
+        }
+        
+        if(upBtn.classList.contains('scrolling')) {
+            upBtn.classList.remove('scrolling')
+        }
     }
 })
 
